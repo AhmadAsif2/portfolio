@@ -24,7 +24,7 @@ const Education: React.FC = () => {
         {educationData.map((edu, idx) => (
           <div
             key={idx}
-            className="rounded-lg border border-gray-200 cursor-pointer bg-white p-4 "
+            className="group relative rounded-lg border border-gray-200 cursor-pointer bg-white p-4 "
           >
             {/* Top row: Degree & Graduation Date */}
             <div className="flex items-start justify-between">
@@ -35,6 +35,7 @@ const Education: React.FC = () => {
                 {edu.graduationDate}
               </span>
             </div>
+            <span className="shimmer"></span>
 
             {/* Institution */}
             <p className="mt-1 text-md text-[#52525D]">{edu.institution}</p>

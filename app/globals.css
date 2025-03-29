@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@config '../tailwind.config.ts';
+
 .shimmer {
   position: absolute;
   top: 0;
